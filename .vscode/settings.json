@@ -1,0 +1,26 @@
+{
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--enable-all"
+    ],
+    "go.vetFlags": [
+        "-all"
+    ],
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "gopls": {
+        "staticcheck": true,
+        "analyses": {
+            "unusedparams": true,
+            "unusedwrite": true,
+            "unusedvariable": true
+        }
+    },
+    "editor.formatOnSave": true,
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "workbench.iconTheme": "vscode-great-icons"
+}
